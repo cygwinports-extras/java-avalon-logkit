@@ -1,0 +1,11 @@
+JAVA_CLASSPATH="log4j.jar:javaee.jar"
+inherit ant
+
+DESCRIPTION="Avalon Excalibur Log Management System"
+HOMEPAGE="http://avalon.apache.org/"
+SRC_URI="http://www.apache.org/dist/excalibur/${ORIG_PN}/source/${P#java-}-src.tar.gz"
+
+ANT_BUILD_ARGS="-Dnoget=true -Dbuild.sysclasspath=${CLASSPATH}"
+ANT_BUILD_TARGETS="jar javadoc"
+ANT_INSTALL_JARS="target/*.jar"
+ANT_INSTALL_JAVADOC="dist/docs/api"

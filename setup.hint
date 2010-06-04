@@ -1,0 +1,6 @@
+category: Java
+requires: java-log4j java-javaee
+sdesc: "Avalon logging framework"
+ldesc: "Avalon LogKit is the logging framework used throughout the 
+Avalon project. Excalibur, Cornerstone, and Phoenix all assume the use 
+of this project."
